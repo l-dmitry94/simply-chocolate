@@ -1,0 +1,221 @@
+:root {
+  --black: #111111;
+  --orange: #fd9222;
+  --violet: #1e1823;
+  --beige: #fcf1e0;
+  --white-2: #fafafa;
+  --gray: #4c4c4c;
+  --white: #ffffff;
+  --font-primary: "Montserrat", sans-serif;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button {
+  font-family: inherit;
+  color: currentColor;
+}
+
+input {
+  font-family: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--black);
+  background-color: var(--white-2);
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1166px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  padding: 26px 0 34px;
+}
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__logo-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.header__logo-italic {
+  font-style: italic;
+}
+.header__logo-icon {
+  margin-left: 4px;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.header__menu {
+  display: flex;
+  gap: 24px;
+  margin-right: 90px;
+}
+.header__menu-link {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  transition: color 0.3s ease-in-out;
+}
+.header__menu-link:hover, .header__menu-link:focus {
+  color: var(--orange);
+}
+.header__socials {
+  display: flex;
+  gap: 14px;
+}
+.header__socials-link:hover .header__socials-icon, .header__socials-link:focus .header__socials-icon {
+  stroke: var(--orange);
+}
+.header__socials-icon {
+  fill: transparent;
+  stroke: var(--black);
+  transition: stroke 0.3s ease-in-out;
+}
+
+.hero__block {
+  display: flex;
+  align-items: flex-end;
+  min-height: 600px;
+  border-radius: 30px;
+  background-color: rgba(17, 17, 17, 0.6);
+  background-image: url(../img/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 40px;
+}
+.hero__info {
+  width: 100%;
+}
+.hero__title {
+  max-width: 484px;
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+}
+.hero__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.hero__buttons-list {
+  display: flex;
+  gap: 14px;
+}
+.hero__buttons-link {
+  display: inline-block;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 100px;
+  cursor: pointer;
+  padding: 14px 40px;
+}
+.hero__button-orange {
+  background-color: var(--orange);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.hero__button-orange:hover, .hero__button-orange:focus {
+  background-color: var(--beige);
+  color: var(--orange);
+}
+.hero__button-transparent {
+  border: 1px solid var(--white);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.hero__button-transparent:hover, .hero__button-transparent:focus {
+  background-color: transparent;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+}
+.hero__button-scroll {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  align-self: flex-end;
+}
+.hero__button-scroll:hover .hero__button-scroll-text, .hero__button-scroll:focus .hero__button-scroll-text {
+  color: var(--orange);
+}
+.hero__button-scroll:hover .hero__button-scroll-link, .hero__button-scroll:focus .hero__button-scroll-link {
+  background-color: var(--orange);
+}
+.hero__button-scroll:hover .hero__button-scroll-icon, .hero__button-scroll:focus .hero__button-scroll-icon {
+  fill: var(--white);
+}
+.hero__button-scroll-text {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  transition: color 0.3s ease-in-out;
+}
+.hero__button-scroll-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background-color: var(--white);
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out;
+}
+.hero__button-scroll-icon {
+  fill: var(--orange);
+  transition: fill 0.3s ease-in-out;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero__block {
+    background-image: url(../img/hero-bg@2x.jpg);
+  }
+}

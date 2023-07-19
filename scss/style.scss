@@ -1,0 +1,220 @@
+:root {
+    --black: #111111;
+    --orange: #fd9222;
+    --violet: #1e1823;
+    --beige: #fcf1e0;
+    --white-2: #fafafa;
+    --gray: #4c4c4c;
+    --white: #ffffff;
+    --font-primary: 'Montserrat', sans-serif;
+}
+
+@import "reset";
+
+body {
+    font-family: var(--font-primary);
+    color: var(--black);
+    background-color: var(--white-2);
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1166px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    padding: 26px 0 34px;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo-title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.11;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+    }
+
+    &__logo-italic {
+        font-style: italic;
+    }
+
+    &__logo-icon {
+        margin-left: 4px;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 24px;
+        margin-right: 90px;
+    }
+
+    &__menu-link {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+        transition: color .3s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: var(--orange);
+        }
+    }
+
+    &__socials {
+        display: flex;
+        gap: 14px;
+    }
+
+    &__socials-link:hover .header__socials-icon,
+    &__socials-link:focus .header__socials-icon {
+        stroke: var(--orange);
+    }
+
+    &__socials-icon {
+        fill: transparent;
+        stroke: var(--black);
+        transition: stroke .3s ease-in-out;
+    }
+}
+
+.hero {
+
+    &__block {
+        display: flex;
+        align-items: flex-end;
+        min-height: 600px;
+        border-radius: 30px;
+        background-color: rgba(17, 17, 17, 0.60);
+        background-image: url(../img/hero-bg.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 40px;
+    }
+
+    &__info {
+        width: 100%;
+    }
+
+    &__title {
+        max-width: 484px;
+        color: var(--white);
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 1.21;
+        letter-spacing: -0.03em;
+        margin-bottom: 32px;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__buttons-list {
+        display: flex;
+        gap: 14px;
+    }
+
+    &__buttons-item {}
+
+    &__buttons-link {
+        display: inline-block;
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 100px;
+        cursor: pointer;
+        padding: 14px 40px;
+    }
+
+    &__button-orange {
+        background-color: var(--orange);
+        transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+        &:hover,
+        &:focus {
+            background-color: var(--beige);
+            color: var(--orange);
+        }
+    }
+
+    &__button-transparent {
+        border: 1px solid var(--white);
+        transition: background-color .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out;
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            color: var(--orange);
+            border: 1px solid var(--orange);
+        }
+    }
+
+    &__button-scroll {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        align-self: flex-end;
+
+        &:hover &-text,
+        &:focus &-text {
+            color: var(--orange);
+        }
+
+        &:hover &-link,
+        &:focus &-link {
+            background-color: var(--orange);
+        }
+
+        &:hover &-icon,
+        &:focus &-icon {
+            fill: var(--white);
+        }
+    }
+
+    &__button-scroll-text {
+        color: var(--white);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.29;
+        letter-spacing: -0.03em;
+        transition: color .3s ease-in-out;
+    }
+
+    &__button-scroll-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        background-color: var(--white);
+        border-radius: 50%;
+        transition: background-color .3s ease-in-out;
+
+    }
+
+    &__button-scroll-icon {
+        fill: var(--orange);
+        transition: fill .3s ease-in-out;
+    }
+}
+
+@import "media";

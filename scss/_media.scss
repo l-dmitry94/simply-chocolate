@@ -1,0 +1,7 @@
+@media (min-resolution: 192dpi) {
+    .hero {
+        &__block {
+            background-image: url(../img/hero-bg@2x.jpg);
+        }
+    }
+}
