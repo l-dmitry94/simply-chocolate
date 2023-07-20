@@ -484,18 +484,99 @@ body {
 
     &__video-play-icon {
         fill: #F5F4F4;
+        transform: translateX(2px);
     }
 
     &__info {
         max-width: 516px;
+        border-radius: 15px;
+        background: #FFF;
+        padding: 32px;
     }
 
-    &__info-title {}
+    &__info-title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.33;
+        margin-bottom: 28px;
+    }
 
-    &__list {}
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
 
-    &__list-item {}
+    &__list-item {
+        display: flex;
+        gap: 8px;
+        font-size: 14px;
+        line-height: 1.28;
+        letter-spacing: -0.02em;
+
+        &::before {
+            content: '';
+            min-width: 8px;
+            height: 8px;
+            background-color: var(--gray);
+            border: 1px solid #ECEDED;
+            border-radius: 50%;
+            margin-top: 5px;
+        }
+    }
 }
+
+.products {
+    padding: 60px 0;
+
+    &__list {
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    &__list-item {
+        flex-basis: calc((100% - 54px) / 4);
+        text-align: center;
+        border-radius: 15px;
+        border: 1px solid rgba(17, 17, 17, 0.10);
+        background: var(--white);
+        padding: 32px 0;
+    }
+
+    &__list-item-img {
+        margin: 0 auto 8px;
+    }
+
+    &__list-item-info {
+        margin-bottom: 18px;
+    }
+
+    &__list-item-title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.33;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+    }
+
+    &__list-item-descr {
+        color: rgba(17, 17, 17, 0.70);
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: -0.02em;
+    }
+
+    &__list-item-price {
+        display: inline-block;
+        border-radius: 100px;
+        border: 1px solid rgba(17, 17, 17, 0.10);
+        background: var(--white-2);
+        padding: 8px 20px;
+    }
+}
+
 
 
 @import "media";
