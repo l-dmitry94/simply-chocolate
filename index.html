@@ -65,11 +65,16 @@
                         </li>
                     </ul>
                 </div>
+                <button class="header__burger">
+                    <svg class="header__burger-icon" width="28" height="28">
+                        <use href="./img/icons.svg#icon-burger"></use>
+                    </svg>
+                </button>
             </div>
         </div>
     </header>
 
-    <main>
+    <!-- <main>
 
         <section class="hero">
             <div class="container">
@@ -662,7 +667,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <div class="modal__overlay is-hidden" data-modal="">
         <div class="modal__content">
@@ -677,7 +682,8 @@
                     <div class="modal__form-item">
                         <label class="modal__form-label" for="user-name">Name</label>
                         <div class="modal__form-content">
-                            <input class="modal__form-input" id="user-name" type="text" name="user-name" pattern="[A-Za-zА\s]+">
+                            <input class="modal__form-input" id="user-name" type="text" name="user-name"
+                                pattern="[A-Za-zА\s]+">
                             <svg class="modal__form-icon" width="24" height="24">
                                 <use href="./img/icons.svg#icon-user"></use>
                             </svg>
@@ -701,7 +707,8 @@
                     <div class="modal__form-item">
                         <label class="modal__form-label" for="user-phone">Phone</label>
                         <div class="modal__form-content">
-                            <input class="modal__form-input" id="user-phone" type="tel" name="user-phone" maxlength="13" pattern="[0-9 +]*">
+                            <input class="modal__form-input" id="user-phone" type="tel" name="user-phone" maxlength="13"
+                                pattern="[0-9 +]*">
                             <svg class="modal__form-icon" width="24" height="24">
                                 <use href="./img/icons.svg#icon-phone"></use>
                             </svg>
@@ -716,14 +723,15 @@
                             placeholder="Enter text"></textarea>
                     </div>
                     <div class="modal__form-item">
-                        <input class="visually-hidden modal__form-checkbox-hidden" type="checkbox" name="privacy" id="privacy">
+                        <input class="visually-hidden modal__form-checkbox-hidden" type="checkbox" name="privacy"
+                            id="privacy">
                         <label class="modal__form-label-checkbox" for="privacy">
                             <span class="modal__form-checkbox">
                                 <svg class="modal__form-checkbox-icon" width="10" height="9.5">
                                     <use href="./img/icons.svg#icon-checkmark"></use>
                                 </svg>
                             </span>
-                            I accept the terms and conditions of the 
+                            I accept the terms and conditions of the
                             <a class="modal__from-link" href="#">Privacy Policy</a>
                         </label>
 
@@ -734,7 +742,11 @@
         </div>
     </div>
 
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
     <script src="js/modal.js"></script>
+    <script src="js/mobile-menu.js"></script>
 
 </body>
 

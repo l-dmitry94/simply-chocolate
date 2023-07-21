@@ -60,6 +60,14 @@ body {
         display: flex;
         align-items: center;
     }
+
+    &__burger {
+        cursor: pointer;
+    }
+
+    &__burger-icon {
+        stroke: var(--black);
+    }
 }
 
 .nav {
