@@ -677,9 +677,12 @@
                     <div class="modal__form-item">
                         <label class="modal__form-label" for="user-name">Name</label>
                         <div class="modal__form-content">
-                            <input class="modal__form-input" id="user-name" type="text" name="user-name">
+                            <input class="modal__form-input" id="user-name" type="text" name="user-name" pattern="[A-Za-zА\s]+">
                             <svg class="modal__form-icon" width="24" height="24">
                                 <use href="./img/icons.svg#icon-user"></use>
+                            </svg>
+                            <svg class="modal__form-error" width="24" height="24">
+                                <use href="./img/icons.svg#icon-error"></use>
                             </svg>
                         </div>
                     </div>
@@ -690,14 +693,20 @@
                             <svg class="modal__form-icon" width="24" height="24">
                                 <use href="./img/icons.svg#icon-email"></use>
                             </svg>
+                            <svg class="modal__form-error" width="24" height="24">
+                                <use href="./img/icons.svg#icon-error"></use>
+                            </svg>
                         </div>
                     </div>
                     <div class="modal__form-item">
                         <label class="modal__form-label" for="user-phone">Phone</label>
                         <div class="modal__form-content">
-                            <input class="modal__form-input" id="user-phone" type="tel" name="user-phone">
+                            <input class="modal__form-input" id="user-phone" type="tel" name="user-phone" maxlength="13" pattern="[0-9 +]*">
                             <svg class="modal__form-icon" width="24" height="24">
                                 <use href="./img/icons.svg#icon-phone"></use>
+                            </svg>
+                            <svg class="modal__form-error" width="24" height="24">
+                                <use href="./img/icons.svg#icon-error"></use>
                             </svg>
                         </div>
                     </div>
