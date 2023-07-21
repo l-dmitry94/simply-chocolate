@@ -28,37 +28,37 @@
                     </svg>
                 </a>
                 <div class="header__right">
-                    <nav class="header__nav">
-                        <ul class="header__menu">
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">Home</a>
+                    <nav class="nav">
+                        <ul class="nav__menu">
+                            <li class="nav__menu-item">
+                                <a class="nav__menu-link" href="#">Home</a>
                             </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">How it's made?</a>
+                            <li class="nav__menu-item">
+                                <a class="nav__menu-link" href="#production">How it's made?</a>
                             </li>
-                            <li class="header__menu-item">
-                                <a class="header__menu-link" href="#">Chocolate is loveds</a>
+                            <li class="nav__menu-item">
+                                <a class="nav__menu-link" href="#reviews">Chocolate is loveds</a>
                             </li>
                         </ul>
                     </nav>
-                    <ul class="header__socials">
-                        <li class="header__socials-item">
-                            <a class="header__socials-link" href="#">
-                                <svg class="header__socials-icon" width="24" height="24">
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <svg class="socials__icon" width="24" height="24">
                                     <use href="./img/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="header__socials-item">
-                            <a class="header__socials-link" href="#">
-                                <svg class="header__socials-icon" href="#" width="24" height="24">
+                        <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <svg class="socials__icon" href="#" width="24" height="24">
                                     <use href="./img/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li class="header__socials-item">
-                            <a class="header__socials-link" href="#">
-                                <svg class="header__socials-icon" width="24" height="24">
+                        <li class="socials__item">
+                            <a class="socials__link" href="#">
+                                <svg class="socials__icon" width="24" height="24">
                                     <use href="./img/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
@@ -87,17 +87,17 @@
                                     <button class="hero__buttons-link hero__button-orange" type="button">Buy now</a>
                                 </li>
                                 <li class="hero__buttons-item">
-                                    <a class="hero__buttons-link hero__button-transparent" href="#">How it's made</a>
+                                    <a class="hero__buttons-link hero__button-transparent" href="#production">How it's made</a>
                                 </li>
                             </ul>
-                            <div class="hero__button-scroll">
+                            <a class="hero__button-scroll" href="#footer">
                                 <span class="hero__button-scroll-text">scroll down</span>
-                                <a class="hero__button-scroll-link" href="#">
+                                <div class="hero__button-scroll-link">
                                     <svg class="hero__button-scroll-icon" width="22" height="22">
                                         <use href="./img/icons.svg#icon-hero-arrow"></use>
                                     </svg>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -354,7 +354,7 @@
             </div>
         </section>
 
-        <section class="production">
+        <section class="production" id="production">
             <div class="container">
                 <h2 class="title">hOW IT'S <span class="title__color">made?</span></h2>
                 <div class="production__block">
@@ -499,12 +499,14 @@
                                 srcset="./img/sellers-1.jpg 1x, ./img/sellers-1@2x.jpg 2x" src="./img/sellers-1.jpg"
                                 alt="CHOCOLATE WITH NUTS">
                             <p class="sellers__list-item-text">
-                                Chocolate with fruit is an unbeatable
-                                combination of two of the tastiest
-                                things in the world. This dessert
-                                combines delicate and aromatic
-                                chocolate with fresh and juicy fruits,
-                                creating a true poetry of taste.
+                                Chocolate with nuts is a delectable
+                                combination that brings together the
+                                smoothness of chocolate and the
+                                crunchiness of nuts. Whether it's milk
+                                chocolate, dark chocolate, or white
+                                chocolate, the addition of nuts adds
+                                a whole new dimension of flavor and
+                                texture.
                             </p>
                         </div>
                         <h3 class="sellers__list-item-title">CHOCOLATE WITH NUTS</h3>
@@ -531,12 +533,13 @@
                                 srcset="./img/sellers-3.jpg 1x, ./img/sellers-3@2x.jpg 2x" src="./img/sellers-3.jpg"
                                 alt="DARK CHOCOLATE">
                             <p class="sellers__list-item-text">
-                                Chocolate with fruit is an unbeatable
-                                combination of two of the tastiest
-                                things in the world. This dessert
-                                combines delicate and aromatic
-                                chocolate with fresh and juicy fruits,
-                                creating a true poetry of taste.
+                                Dark chocolate is a rich and indulgent
+                                treat that is beloved by many chocolate
+                                enthusiasts. It is made from cocoa beans,
+                                which are roasted, ground, and then
+                                processed to produce chocolate liquor.
+                                Dark chocolate contains a higher percentage
+                                of cocoa solids compared to milk chocolate.
                             </p>
                         </div>
                         <h3 class="sellers__list-item-title">DARK CHOCOLATE</h3>
@@ -545,48 +548,184 @@
             </div>
         </section>
 
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="container">
                 <h2 class="title"><span class="title__color">chocolate</span> is loved</h2>
                 <ul class="reviews__list">
                     <li class="reviews__list-item">
-                        <img class="reviews__list-item-avatar" src="./img/reviews-1.png" alt="Victoria Dobrzhanska" 
-                        srcset="./img/reviews-1.png 1x, ./img/reviews-1@2x.png 2x">
+                        <img class="reviews__list-item-avatar" src="./img/reviews-1.png" alt="Victoria Dobrzhanska"
+                            srcset="./img/reviews-1.png 1x, ./img/reviews-1@2x.png 2x">
                         <h3 class="reviews__list-item-name">Victoria Dobrzhanska</h3>
                         <p class="reviews__list-item-review">
-                            I love this chocolate bar. Perfect 
-                            combination of light crispy wafer, 
+                            I love this chocolate bar. Perfect
+                            combination of light crispy wafer,
                             covered in a thin layer chocolate.
                         </p>
                     </li>
                     <li class="reviews__list-item">
-                        <img class="reviews__list-item-avatar" src="./img/reviews-2.png" alt="Nazar Babenko" 
-                        srcset="./img/reviews-2.png 1x, ./img/reviews-2@2x.png 2x">
+                        <img class="reviews__list-item-avatar" src="./img/reviews-2.png" alt="Nazar Babenko"
+                            srcset="./img/reviews-2.png 1x, ./img/reviews-2@2x.png 2x">
                         <h3 class="reviews__list-item-name">Nazar Babenko</h3>
                         <p class="reviews__list-item-review">
-                            This chocolate confection is a 
-                            delight! A delight! The wafer is 
-                            light and crisp, the hazelnut cream 
+                            This chocolate confection is a
+                            delight! A delight! The wafer is
+                            light and crisp, the hazelnut cream
                             is smooth, and the chocolate is good.
                         </p>
                     </li>
                     <li class="reviews__list-item">
-                        <img class="reviews__list-item-avatar" src="./img/reviews-3.png" alt="Olena Kampusch" 
-                        srcset="./img/reviews-3.png 1x, ./img/reviews-3@2x.png 2x">
+                        <img class="reviews__list-item-avatar" src="./img/reviews-3.png" alt="Olena Kampusch"
+                            srcset="./img/reviews-3.png 1x, ./img/reviews-3@2x.png 2x">
                         <h3 class="reviews__list-item-name">Olena Kampusch</h3>
                         <p class="reviews__list-item-review">
-                            Chocolate is a family favourite 
-                            treat. Love the delicious smooth 
-                            chocolate and the creaminess inside. 
+                            Chocolate is a family favourite
+                            treat. Love the delicious smooth
+                            chocolate and the creaminess inside.
                             The wafer is soft but crunchy.
                         </p>
                     </li>
                 </ul>
-                <button class="reviews__button" type="button">Leave  a review</button>
+                <button class="reviews__button" type="button" data-modal-open="">Leave a review</button>
             </div>
         </section>
 
     </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__row">
+                <p class="footer__text">
+                    <span class="footer__text-color">Chocolate</span> a delicious cure for a bad day
+                </p>
+                <ul class="footer__list">
+                    <li class="footer__list-item">
+                        <p class="footer__title">Social networks</p>
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a class="socials__link" href="#" target="_blank">
+                                    <svg class="socials__icon footer__socials-icon" width="24" height="24">
+                                        <use href="./img/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__link" href="#" target="_blank">
+                                    <svg class="socials__icon footer__socials-icon" href="#" width="24" height="24">
+                                        <use href="./img/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a class="socials__link" href="#" target="_blank">
+                                    <svg class="socials__icon footer__socials-icon" width="24" height="24">
+                                        <use href="./img/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__list-item">
+                        <p class="footer__title">Contact us</p>
+                        <address class="footer__address">
+                            <ul class="footer__address-list">
+                                <li class="footer__address-list-item">
+                                    <a class="footer__address-list-link" href="tel:+38084439426">+380 (68) 443-94-26</a>
+                                </li>
+                                <li class="footer__address-list-item">
+                                    <a class="footer__address-list-link"
+                                        href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__row">
+                <nav class="nav">
+                    <ul class="nav__menu footer__nav-menu">
+                        <li class="nav__menu-item">
+                            <a class="nav__menu-link footer__menu-link" href="#">Home</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a class="nav__menu-link footer__menu-link" href="#production">How it's made?</a>
+                        </li>
+                        <li class="nav__menu-item">
+                            <a class="nav__menu-link footer__menu-link" href="#reviews">Chocolate is loveds</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="footer__form">
+                    <label class="footer__form-label" for="subscribe">
+                        <input class="footer__form-input" type="email" placeholder="Enter your email" name="subscribe">
+                    </label>
+                    <button class="footer__form-subscribe" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal__overlay is-hidden" data-modal="">
+        <div class="modal__content">
+            <button class="modal__close" type="button" data-modal-close="">
+                <svg class="modal__close-icon" width="28" height="28">
+                    <use href="./img/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h2 class="title">LEAVE A REVIEW ABOUT <span class="title__color">OUR CHOCOLATE</span></h2>
+            <form class="modal__form">
+                <div class="modal__form-block">
+                    <div class="modal__form-item">
+                        <label class="modal__form-label" for="user-name">Name</label>
+                        <div class="modal__form-content">
+                            <input class="modal__form-input" id="user-name" type="text" name="user-name">
+                            <svg class="modal__form-icon" width="24" height="24">
+                                <use href="./img/icons.svg#icon-user"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal__form-item">
+                        <label class="modal__form-label" for="user-email">Email</label>
+                        <div class="modal__form-content">
+                            <input class="modal__form-input" id="user-email" type="email" name="user-email">
+                            <svg class="modal__form-icon" width="24" height="24">
+                                <use href="./img/icons.svg#icon-email"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal__form-item">
+                        <label class="modal__form-label" for="user-phone">Phone</label>
+                        <div class="modal__form-content">
+                            <input class="modal__form-input" id="user-phone" type="tel" name="user-phone">
+                            <svg class="modal__form-icon" width="24" height="24">
+                                <use href="./img/icons.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal__form-item">
+                        <label class="modal__form-label" for="user-comment">Comment</label>
+                        <textarea class="modal__form-textarea" id="user-comment" name="user-comment"
+                            placeholder="Enter text"></textarea>
+                    </div>
+                    <div class="modal__form-item">
+                        <input class="visually-hidden modal__form-checkbox-hidden" type="checkbox" name="privacy" id="privacy">
+                        <label class="modal__form-label-checkbox" for="privacy">
+                            <span class="modal__form-checkbox">
+                                <svg class="modal__form-checkbox-icon" width="10" height="9.5">
+                                    <use href="./img/icons.svg#icon-checkmark"></use>
+                                </svg>
+                            </span>
+                            I accept the terms and conditions of the 
+                            <a class="modal__from-link" href="#">Privacy Policy</a>
+                        </label>
+
+                    </div>
+                </div>
+                <button class="modal__form-button" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/modal.js"></script>
 
 </body>
 
