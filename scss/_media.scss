@@ -6,6 +6,112 @@
     }
 }
 
+
+
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 0 14px;
+
+        &__right {
+            display: none;
+        }
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & .socials {
+            gap: 12px;
+        }
+
+        & .socials__icon {
+            width: 20px;
+            height: 20px;
+            stroke: var(--white);
+        }
+    }
+
+    .hero {
+
+        &__block {
+            padding: 20px;
+        }
+
+        &__subtitle {
+            max-width: 100%;
+            font-size: 20px;
+            line-height: 24px;
+            line-height: 1.2;
+            letter-spacing: -0.03em;
+
+            & br {
+                display: none;
+            }
+        }
+
+        &__buttons {
+            flex-direction: column;
+            row-gap: 32px;
+        }
+
+        &__buttons-link {
+            padding: 12px 28px;
+        }
+
+        &__button-scroll {
+            align-self: baseline;
+            gap: 12px;
+        }
+
+        &__button-scroll-text {
+            font-size: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.03em;
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .hero {
+        &__subtitle {
+            font-size: 18px;
+        }
+
+        &__buttons-list {
+        }
+
+        &__buttons-link {
+            padding: 12px 17px;
+        }
+    }
+}
+
 @media (min-width: 768px) {
-    
+
+    .header {
+        &__burger {
+            display: none;
+        }
+
+        & .nav__menu {
+            margin-right: 48px;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+
+    .header {
+        &__logo-title {
+            font-size: 14px;
+        }
+
+        &__logo-icon {
+            width: 21px;
+            height: 21px;
+        }
+    }
+
 }

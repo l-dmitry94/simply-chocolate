@@ -23,7 +23,7 @@
                     <p class="header__logo-title">
                         <span class="header__logo-italic">Simply</span> chocolate
                     </p>
-                    <svg class="header__logo-icon" width="24" height="24">
+                    <svg class="header__logo-icon">
                         <use href="./img/icons.svg#icon-chocolate"></use>
                     </svg>
                 </a>
@@ -65,7 +65,7 @@
                         </li>
                     </ul>
                 </div>
-                <button class="header__burger">
+                <button class="header__burger js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                     <svg class="header__burger-icon" width="28" height="28">
                         <use href="./img/icons.svg#icon-burger"></use>
                     </svg>
@@ -74,7 +74,7 @@
         </div>
     </header>
 
-    <!-- <main>
+    <main>
 
         <section class="hero">
             <div class="container">
@@ -92,7 +92,8 @@
                                     <button class="hero__buttons-link hero__button-orange" type="button">Buy now</a>
                                 </li>
                                 <li class="hero__buttons-item">
-                                    <a class="hero__buttons-link hero__button-transparent" href="#production">How it's made</a>
+                                    <a class="hero__buttons-link hero__button-transparent" href="#production">How it's
+                                        made</a>
                                 </li>
                             </ul>
                             <a class="hero__button-scroll" href="#footer">
@@ -109,7 +110,7 @@
             </div>
         </section>
 
-        <section class="benefits">
+     <!--       <section class="benefits">
             <div class="container">
                 <h2 class="visually-hidden">Benefits</h2>
                 <ul class="benefits__list">
@@ -740,6 +741,50 @@
                 <button class="modal__form-button" type="submit">Send</button>
             </form>
         </div>
+    </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="modal__close js-close-menu" type="button">
+            <svg class="modal__close-icon" width="28" height="28">
+                <use href="./img/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="nav__menu-item">
+                    <a class="nav__menu-link" href="#">Home</a>
+                </li>
+                <li class="nav__menu-item">
+                    <a class="nav__menu-link" href="#production">How it's made?</a>
+                </li>
+                <li class="nav__menu-item">
+                    <a class="nav__menu-link" href="#reviews">Chocolate is loveds</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="socials">
+            <li class="socials__item">
+                <a class="socials__link" href="#">
+                    <svg class="socials__icon">
+                        <use href="./img/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials__item">
+                <a class="socials__link" href="#">
+                    <svg class="socials__icon" href="#">
+                        <use href="./img/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials__item">
+                <a class="socials__link" href="#">
+                    <svg class="socials__icon">
+                        <use href="./img/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
     </div>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
