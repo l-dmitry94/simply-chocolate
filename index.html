@@ -167,7 +167,7 @@
             </div>
         </section>
 
-        <section class="ingridients">
+      <section class="ingridients">
             <div class="container">
                 <h2 class="ingridients__title title">
                     IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="title__color">TASTE</span> SENSATION
@@ -360,7 +360,7 @@
             </div>
         </section>
 
-        <section class="production" id="production">
+                <!-- <section class="production" id="production">
             <div class="container">
                 <h2 class="title">hOW IT'S <span class="title__color">made?</span></h2>
                 <div class="production__block">
@@ -593,7 +593,7 @@
                 </ul>
                 <button class="reviews__button" type="button" data-modal-open="">Leave a review</button>
             </div>
-        </section>
+        </section> 
 
     </main>
 
@@ -668,131 +668,131 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer>-->
 
-    <div class="modal__overlay is-hidden" data-modal="">
-        <div class="modal__content">
-            <button class="modal__close" type="button" data-modal-close="">
+        <div class="modal__overlay is-hidden" data-modal="">
+            <div class="modal__content">
+                <button class="modal__close" type="button" data-modal-close="">
+                    <svg class="modal__close-icon" width="28" height="28">
+                        <use href="./img/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <h2 class="title">LEAVE A REVIEW ABOUT <span class="title__color">OUR CHOCOLATE</span></h2>
+                <form class="modal__form">
+                    <div class="modal__form-block">
+                        <div class="modal__form-item">
+                            <label class="modal__form-label" for="user-name">Name</label>
+                            <div class="modal__form-content">
+                                <input class="modal__form-input" id="user-name" type="text" name="user-name"
+                                    pattern="[A-Za-zА\s]+">
+                                <svg class="modal__form-icon" width="24" height="24">
+                                    <use href="./img/icons.svg#icon-user"></use>
+                                </svg>
+                                <svg class="modal__form-error" width="24" height="24">
+                                    <use href="./img/icons.svg#icon-error"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="modal__form-item">
+                            <label class="modal__form-label" for="user-email">Email</label>
+                            <div class="modal__form-content">
+                                <input class="modal__form-input" id="user-email" type="email" name="user-email">
+                                <svg class="modal__form-icon" width="24" height="24">
+                                    <use href="./img/icons.svg#icon-email"></use>
+                                </svg>
+                                <svg class="modal__form-error" width="24" height="24">
+                                    <use href="./img/icons.svg#icon-error"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="modal__form-item">
+                            <label class="modal__form-label" for="user-phone">Phone</label>
+                            <div class="modal__form-content">
+                                <input class="modal__form-input" id="user-phone" type="tel" name="user-phone"
+                                    maxlength="13" pattern="[0-9 +]*">
+                                <svg class="modal__form-icon" width="24" height="24">
+                                    <use href="./img/icons.svg#icon-phone"></use>
+                                </svg>
+                                <svg class="modal__form-error" width="24" height="24">
+                                    <use href="./img/icons.svg#icon-error"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="modal__form-item">
+                            <label class="modal__form-label" for="user-comment">Comment</label>
+                            <textarea class="modal__form-textarea" id="user-comment" name="user-comment"
+                                placeholder="Enter text"></textarea>
+                        </div>
+                        <div class="modal__form-item">
+                            <input class="visually-hidden modal__form-checkbox-hidden" type="checkbox" name="privacy"
+                                id="privacy">
+                            <label class="modal__form-label-checkbox" for="privacy">
+                                <span class="modal__form-checkbox">
+                                    <svg class="modal__form-checkbox-icon" width="10" height="9.5">
+                                        <use href="./img/icons.svg#icon-checkmark"></use>
+                                    </svg>
+                                </span>
+                                I accept the terms and conditions of the
+                                <a class="modal__from-link" href="#">Privacy Policy</a>
+                            </label>
+
+                        </div>
+                    </div>
+                    <button class="modal__form-button" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="modal__close js-close-menu" type="button">
                 <svg class="modal__close-icon" width="28" height="28">
                     <use href="./img/icons.svg#icon-close"></use>
                 </svg>
             </button>
-            <h2 class="title">LEAVE A REVIEW ABOUT <span class="title__color">OUR CHOCOLATE</span></h2>
-            <form class="modal__form">
-                <div class="modal__form-block">
-                    <div class="modal__form-item">
-                        <label class="modal__form-label" for="user-name">Name</label>
-                        <div class="modal__form-content">
-                            <input class="modal__form-input" id="user-name" type="text" name="user-name"
-                                pattern="[A-Za-zА\s]+">
-                            <svg class="modal__form-icon" width="24" height="24">
-                                <use href="./img/icons.svg#icon-user"></use>
-                            </svg>
-                            <svg class="modal__form-error" width="24" height="24">
-                                <use href="./img/icons.svg#icon-error"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="modal__form-item">
-                        <label class="modal__form-label" for="user-email">Email</label>
-                        <div class="modal__form-content">
-                            <input class="modal__form-input" id="user-email" type="email" name="user-email">
-                            <svg class="modal__form-icon" width="24" height="24">
-                                <use href="./img/icons.svg#icon-email"></use>
-                            </svg>
-                            <svg class="modal__form-error" width="24" height="24">
-                                <use href="./img/icons.svg#icon-error"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="modal__form-item">
-                        <label class="modal__form-label" for="user-phone">Phone</label>
-                        <div class="modal__form-content">
-                            <input class="modal__form-input" id="user-phone" type="tel" name="user-phone" maxlength="13"
-                                pattern="[0-9 +]*">
-                            <svg class="modal__form-icon" width="24" height="24">
-                                <use href="./img/icons.svg#icon-phone"></use>
-                            </svg>
-                            <svg class="modal__form-error" width="24" height="24">
-                                <use href="./img/icons.svg#icon-error"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="modal__form-item">
-                        <label class="modal__form-label" for="user-comment">Comment</label>
-                        <textarea class="modal__form-textarea" id="user-comment" name="user-comment"
-                            placeholder="Enter text"></textarea>
-                    </div>
-                    <div class="modal__form-item">
-                        <input class="visually-hidden modal__form-checkbox-hidden" type="checkbox" name="privacy"
-                            id="privacy">
-                        <label class="modal__form-label-checkbox" for="privacy">
-                            <span class="modal__form-checkbox">
-                                <svg class="modal__form-checkbox-icon" width="10" height="9.5">
-                                    <use href="./img/icons.svg#icon-checkmark"></use>
-                                </svg>
-                            </span>
-                            I accept the terms and conditions of the
-                            <a class="modal__from-link" href="#">Privacy Policy</a>
-                        </label>
 
-                    </div>
-                </div>
-                <button class="modal__form-button" type="submit">Send</button>
-            </form>
-        </div>
-    </div>
-
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="modal__close js-close-menu" type="button">
-            <svg class="modal__close-icon" width="28" height="28">
-                <use href="./img/icons.svg#icon-close"></use>
-            </svg>
-        </button>
-
-        <nav class="nav">
-            <ul class="nav__menu">
-                <li class="nav__menu-item">
-                    <a class="nav__menu-link" href="#">Home</a>
+            <nav class="nav">
+                <ul class="nav__menu">
+                    <li class="nav__menu-item">
+                        <a class="nav__menu-link" href="#">Home</a>
+                    </li>
+                    <li class="nav__menu-item">
+                        <a class="nav__menu-link" href="#production">How it's made?</a>
+                    </li>
+                    <li class="nav__menu-item">
+                        <a class="nav__menu-link" href="#reviews">Chocolate is loveds</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="socials">
+                <li class="socials__item">
+                    <a class="socials__link" href="#">
+                        <svg class="socials__icon">
+                            <use href="./img/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
                 </li>
-                <li class="nav__menu-item">
-                    <a class="nav__menu-link" href="#production">How it's made?</a>
+                <li class="socials__item">
+                    <a class="socials__link" href="#">
+                        <svg class="socials__icon" href="#">
+                            <use href="./img/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
                 </li>
-                <li class="nav__menu-item">
-                    <a class="nav__menu-link" href="#reviews">Chocolate is loveds</a>
+                <li class="socials__item">
+                    <a class="socials__link" href="#">
+                        <svg class="socials__icon">
+                            <use href="./img/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
                 </li>
             </ul>
-        </nav>
-        <ul class="socials">
-            <li class="socials__item">
-                <a class="socials__link" href="#">
-                    <svg class="socials__icon">
-                        <use href="./img/icons.svg#icon-instagram"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="socials__item">
-                <a class="socials__link" href="#">
-                    <svg class="socials__icon" href="#">
-                        <use href="./img/icons.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="socials__item">
-                <a class="socials__link" href="#">
-                    <svg class="socials__icon">
-                        <use href="./img/icons.svg#icon-twitter"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-    </div>
+        </div>
 
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script>
-    <script src="js/modal.js"></script>
-    <script src="js/mobile-menu.js"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/mobile-menu.js"></script>
 
 </body>
 

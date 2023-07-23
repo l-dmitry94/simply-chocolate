@@ -122,8 +122,8 @@ body {
         min-height: 600px;
         border-radius: 30px;
         background-color: rgba(17, 17, 17, 0.60);
-        background-image: url(../img/hero-bg.jpg);
-        background-position: center;
+        background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url(../img/hero-bg.jpg), lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
+        background-position: center right;
         background-size: cover;
         padding: 40px;
     }
