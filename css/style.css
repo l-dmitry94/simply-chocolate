@@ -468,6 +468,8 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .production__video-play {
   position: absolute;
@@ -976,7 +978,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   transform: translateX(100%);
   background-color: var(--violet);
   transition: transform 0.3s ease-in-out;
@@ -1080,6 +1082,12 @@ body {
   .ingridients__list {
     flex-direction: column;
   }
+  .production {
+    padding: 40px 0;
+  }
+  .production__info {
+    padding: 20px 14px;
+  }
 }
 @media (max-width: 374px) {
   .hero__subtitle {
@@ -1133,6 +1141,24 @@ body {
   .ingridients__list-item:last-child {
     order: 6;
   }
+  .production {
+    padding: 40px 0;
+  }
+  .production__block {
+    align-items: center;
+  }
+  .production__video {
+    max-width: 614px;
+  }
+  .production__info {
+    max-width: 614px;
+  }
+  .production__list {
+    max-width: 480px;
+  }
+  .production__list-item br {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   .header__burger {
@@ -1171,5 +1197,12 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
     margin-bottom: 16px;
+  }
+  .production__block {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .production__video {
+    height: 500px;
   }
 }
