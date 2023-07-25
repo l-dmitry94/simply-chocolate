@@ -248,6 +248,7 @@
     .modal {
         &__content {
             width: 311px;
+            max-height: 622px;
             padding: 32px 24px;
 
             & .title {
@@ -304,7 +305,6 @@
         }
 
         &__form-label-checkbox {
-            display: flex;
             font-size: 12px;
             line-height: 1.33;
             letter-spacing: -0.03em;
