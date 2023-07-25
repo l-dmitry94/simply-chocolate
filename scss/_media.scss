@@ -245,6 +245,82 @@
         }
     }
 
+    .modal {
+        &__content {
+            width: 311px;
+            padding: 32px 24px;
+
+            & .title {
+                max-width: 255px;
+                font-size: 20px;
+                margin-bottom: 32px;
+
+                & br {
+                    display: block;
+                }
+            }
+        }
+
+        &__close {
+            top: 14px;
+            right: 14px;
+        }
+
+        &__form-block {
+            gap: 14px;
+            margin-bottom: 32px;
+        }
+
+        &__form-label {
+            margin-bottom: 4px;
+        }
+
+        &__form-input {
+            height: 46px;
+            padding-left: 43px;
+        }
+
+        &__form-icon, &__form-error {
+            width: 18px;
+            height: 18px;
+        }
+
+        &__form-icon {
+            left: 18px;
+        }
+
+        &__form-error {
+            right: 18px;
+        }
+
+        &__form-textarea {
+            height: 91px;
+            padding: 14px 18px;
+
+            &::placeholder {
+                font-size: 14px;
+                letter-spacing: -0.03em;
+            }
+        }
+
+        &__form-label-checkbox {
+            display: flex;
+            font-size: 12px;
+            line-height: 1.33;
+            letter-spacing: -0.03em;
+        }
+
+        &__form-checkbox {
+            min-width: 20px;
+            min-height: 20px;
+        }
+
+        &__form-button {
+            padding: 12px 28px;
+        }
+
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {

@@ -418,7 +418,7 @@ body {
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 .title {
@@ -812,22 +812,28 @@ body {
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   z-index: 1000;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  overflow-x: auto;
 }
 .modal__content {
   position: absolute;
-  top: 50%;
+  top: 5%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 5%;
+  transform: translateX(-50%);
   width: 517px;
   border-radius: 15px;
   background: var(--white-2);
+  overflow-y: scroll;
   padding: 40px;
 }
 .modal__content .title {
   max-width: 300px;
   text-align: left;
   margin-bottom: 40px;
+}
+.modal__content .title br {
+  display: none;
 }
 .modal__close {
   position: absolute;
@@ -886,6 +892,8 @@ body {
   position: absolute;
   top: 50%;
   left: 24px;
+  width: 24px;
+  height: 24px;
   transform: translateY(-50%);
   fill: transparent;
   stroke: #404040;
@@ -895,6 +903,8 @@ body {
   position: absolute;
   top: 50%;
   right: 24px;
+  width: 24px;
+  height: 24px;
   transform: translateY(-50%);
   fill: #E74A3B;
   transition: opacity 0.3s ease-in-out;
@@ -1199,6 +1209,68 @@ body {
   .footer__form-subscribe {
     min-width: 120px;
     height: 45px;
+  }
+  .modal__content {
+    width: 311px;
+    padding: 32px 24px;
+  }
+  .modal__content .title {
+    max-width: 255px;
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+  .modal__content .title br {
+    display: block;
+  }
+  .modal__close {
+    top: 14px;
+    right: 14px;
+  }
+  .modal__form-block {
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+  .modal__form-label {
+    margin-bottom: 4px;
+  }
+  .modal__form-input {
+    height: 46px;
+    padding-left: 43px;
+  }
+  .modal__form-icon, .modal__form-error {
+    width: 18px;
+    height: 18px;
+  }
+  .modal__form-icon {
+    left: 18px;
+  }
+  .modal__form-error {
+    right: 18px;
+  }
+  .modal__form-textarea {
+    height: 91px;
+    padding: 14px 18px;
+  }
+  .modal__form-textarea::-moz-placeholder {
+    font-size: 14px;
+    letter-spacing: -0.03em;
+  }
+  .modal__form-textarea::placeholder {
+    font-size: 14px;
+    letter-spacing: -0.03em;
+  }
+  .modal__form-label-checkbox {
+    display: flex;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: -0.03em;
+  }
+  .modal__form-checkbox {
+    min-width: 20px;
+    min-height: 20px;
+  }
+  .modal__form-button {
+    padding: 12px 28px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {

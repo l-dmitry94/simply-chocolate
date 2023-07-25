@@ -683,7 +683,7 @@
                     <use href="./img/icons.svg#icon-close"></use>
                 </svg>
             </button>
-            <h2 class="title">LEAVE A REVIEW ABOUT <span class="title__color">OUR CHOCOLATE</span></h2>
+            <h2 class="title">LEAVE A REVIEW <br> ABOUT <span class="title__color">OUR CHOCOLATE</span></h2>
             <form class="modal__form">
                 <div class="modal__form-block">
                     <div class="modal__form-item">
@@ -691,10 +691,10 @@
                         <div class="modal__form-content">
                             <input class="modal__form-input" id="user-name" type="text" name="user-name"
                                 pattern="[A-Za-zА\s]+">
-                            <svg class="modal__form-icon" width="24" height="24">
+                            <svg class="modal__form-icon">
                                 <use href="./img/icons.svg#icon-user"></use>
                             </svg>
-                            <svg class="modal__form-error" width="24" height="24">
+                            <svg class="modal__form-error">
                                 <use href="./img/icons.svg#icon-error"></use>
                             </svg>
                         </div>
@@ -703,10 +703,10 @@
                         <label class="modal__form-label" for="user-email">Email</label>
                         <div class="modal__form-content">
                             <input class="modal__form-input" id="user-email" type="email" name="user-email">
-                            <svg class="modal__form-icon" width="24" height="24">
+                            <svg class="modal__form-icon">
                                 <use href="./img/icons.svg#icon-email"></use>
                             </svg>
-                            <svg class="modal__form-error" width="24" height="24">
+                            <svg class="modal__form-error">
                                 <use href="./img/icons.svg#icon-error"></use>
                             </svg>
                         </div>
@@ -716,10 +716,10 @@
                         <div class="modal__form-content">
                             <input class="modal__form-input" id="user-phone" type="tel" name="user-phone" maxlength="13"
                                 pattern="[0-9 +]*">
-                            <svg class="modal__form-icon" width="24" height="24">
+                            <svg class="modal__form-icon">
                                 <use href="./img/icons.svg#icon-phone"></use>
                             </svg>
-                            <svg class="modal__form-error" width="24" height="24">
+                            <svg class="modal__form-error">
                                 <use href="./img/icons.svg#icon-error"></use>
                             </svg>
                         </div>
@@ -738,10 +738,11 @@
                                     <use href="./img/icons.svg#icon-checkmark"></use>
                                 </svg>
                             </span>
-                            I accept the terms and conditions of the
-                            <a class="modal__from-link" href="#">Privacy Policy</a>
+                            <div>
+                                I accept the terms and conditions of the
+                                <a class="modal__from-link" href="#">Privacy Policy</a>
+                            </div>
                         </label>
-
                     </div>
                 </div>
                 <button class="modal__form-button" type="submit">Send</button>

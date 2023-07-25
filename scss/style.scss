@@ -422,7 +422,7 @@ body {
         font-size: 14px;
         line-height: 1.28;
         letter-spacing: -0.02em;
-        overflow: hidden;
+        overflow-y: scroll;
     }
 }
 
@@ -872,24 +872,31 @@ body {
         height: 100%;
         background-color: rgba(46, 47, 66, 0.40);
         z-index: 1000;
-        transition: opacity .3s ease-in-out;
+        transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+        overflow-x: auto;
 
     }
 
     &__content {
         position: absolute;
-        top: 50%;
+        top: 5%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        bottom: 5%;
+        transform: translateX(-50%);
         width: 517px;
         border-radius: 15px;
         background: var(--white-2);
+        overflow-y: scroll;
         padding: 40px;
 
         & .title {
             max-width: 300px;
             text-align: left;
             margin-bottom: 40px;
+
+            & br {
+                display: none;
+            }
         }
     }
 
@@ -965,6 +972,8 @@ body {
         position: absolute;
         top: 50%;
         left: 24px;
+        width: 24px;
+        height: 24px;
         transform: translateY(-50%);
         fill: transparent;
         stroke: #404040;
@@ -975,6 +984,8 @@ body {
         position: absolute;
         top: 50%;
         right: 24px;
+        width: 24px;
+        height: 24px;
         transform: translateY(-50%);
         fill: #E74A3B;
         transition: opacity .3s ease-in-out;
