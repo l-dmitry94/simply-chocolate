@@ -548,7 +548,8 @@ body {
 
     &__list {
         display: flex;
-        gap: 18px;
+        column-gap: 18px;
+        row-gap: 24px;
         flex-wrap: wrap;
     }
 
@@ -750,7 +751,7 @@ body {
         }
 
         &:last-child {
-            margin-top: 24px;
+            padding-top: 24px;
         }
     }
 
@@ -769,7 +770,6 @@ body {
 
     &__list {
         display: flex;
-        align-items: center;
         gap: 50px;
     }
 
@@ -807,6 +807,10 @@ body {
 
     &__nav-menu {
         margin-right: 0;
+    }
+
+    & .nav__menu-item:not(:nth-child(-n+3)) {
+        display: none;
     }
 
     &__menu-link {
